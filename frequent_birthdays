@@ -1,0 +1,20 @@
+
+#load required libraries
+library(ggplot2)
+
+#set working directory
+setwd('Processed/')
+
+#load data
+a <-read.csv('combined.csv')
+t <-as.data.frame(table(a$Birthday))
+
+#prepare data
+colnames(t) <-c('birthday','frequency')
+s = subset(t,t$frequency > 5)
+
+#plot most frequent birthday
+g <-ggplot(data=s, aes(x=birthday, y=frequency, fill=birthday)) +
+  geom_bar(colour="black", stat="identity") +
+  guides(fill=FALSE)
+plot(g)
