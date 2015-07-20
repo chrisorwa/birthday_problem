@@ -3,7 +3,7 @@
 library(ggplot2)
 
 #set working directory
-setwd('Processed/')
+setwd('')
 
 #load data
 a <-read.csv('combined.csv')
@@ -17,4 +17,5 @@ s = subset(t,t$frequency > 5)
 g <-ggplot(data=s, aes(x=birthday, y=frequency, fill=birthday)) +
   geom_bar(colour="black", stat="identity") +
   guides(fill=FALSE)
+  
 plot(g)
