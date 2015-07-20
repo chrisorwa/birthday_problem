@@ -1,7 +1,7 @@
 # Birthday Problem
 Testing the Birthday Problem on Facebook birthday data.
 
-Reference \n
+Reference 
 
 
 [Wikipedia](https://en.wikipedia.org/wiki/Birthday_problem)
@@ -10,4 +10,6 @@ Reference \n
 Manually collected data from Facebook friends. Names annonimized. 
 
 Download data here:
-[Dropbox](https://www.dropbox.com/s/vx8i2tt9zffabn9/birthdays.csv?dl=0)
+
+
+[Data Source](https://www.dropbox.com/s/vx8i2tt9zffabn9/birthdays.csv?dl=0)
